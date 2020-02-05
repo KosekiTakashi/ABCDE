@@ -13,6 +13,7 @@
 		B462234A23E83CD800938CCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B462234823E83CD800938CCE /* Main.storyboard */; };
 		B462234C23E83CDC00938CCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B462234B23E83CDC00938CCE /* Assets.xcassets */; };
 		B462234F23E83CDC00938CCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B462234D23E83CDC00938CCE /* LaunchScreen.storyboard */; };
+		B462235723E8458700938CCE /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462235623E8458700938CCE /* ScrollViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B462234B23E83CDC00938CCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B462234E23E83CDC00938CCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B462235023E83CDC00938CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B462235623E8458700938CCE /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B462234B23E83CDC00938CCE /* Assets.xcassets */,
 				B462234D23E83CDC00938CCE /* LaunchScreen.storyboard */,
 				B462235023E83CDC00938CCE /* Info.plist */,
+				B462235623E8458700938CCE /* ScrollViewController.swift */,
 			);
 			path = ABCDE;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				B462234723E83CD800938CCE /* ViewController.swift in Sources */,
 				B462234323E83CD800938CCE /* AppDelegate.swift in Sources */,
 				B462234523E83CD800938CCE /* SceneDelegate.swift in Sources */,
+				B462235723E8458700938CCE /* ScrollViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
