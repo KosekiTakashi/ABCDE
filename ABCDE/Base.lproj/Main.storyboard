@@ -20,11 +20,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="62" id="wTG-cE-O5a">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="62"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="tableViewCell" rowHeight="113" id="wTG-cE-O5a" customClass="tableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="113"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wTG-cE-O5a" id="YoD-Rq-mHz">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="113"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -41,6 +41,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="MJO-rX-YVc" id="9gl-m3-HFY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,6 +190,9 @@ Qe+8iEFkdmVyc2l0ee+8iRHigKjjg43jgqzjg4bjgqPjg5bjgarjgZPjgajjgpLoqJjpjLLjgZnjgos
                                                 <state key="normal" title="決定">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="saveAction:" destination="0Js-ag-3BB" eventType="touchUpInside" id="cUJ-P7-4XN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -257,6 +263,11 @@ Qe+8iEFkdmVyc2l0ee+8iRHigKjjg43jgqzjg4bjgqPjg5bjgarjgZPjgajjgpLoqJjpjLLjgZnjgos
                     <navigationItem key="navigationItem" id="CAk-Dl-j4M"/>
                     <size key="freeformSize" width="414" height="1500"/>
                     <connections>
+                        <outlet property="ATextView" destination="4Wk-x3-1ui" id="pw9-f9-s5H"/>
+                        <outlet property="BTextView" destination="7ac-XR-U4Z" id="mYp-YM-m87"/>
+                        <outlet property="CTextView" destination="8j9-JY-dIr" id="VSa-Qm-dsv"/>
+                        <outlet property="DTextView" destination="Ntb-4o-kJm" id="U1a-1F-UyD"/>
+                        <outlet property="ETextView" destination="eJm-bI-4dH" id="v3l-Cp-7Zj"/>
                         <outlet property="scrollView" destination="ppu-6V-awq" id="Igc-m7-JvR"/>
                     </connections>
                 </viewController>
