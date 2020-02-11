@@ -15,6 +15,7 @@
 		B462234C23E83CDC00938CCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B462234B23E83CDC00938CCE /* Assets.xcassets */; };
 		B462234F23E83CDC00938CCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B462234D23E83CDC00938CCE /* LaunchScreen.storyboard */; };
 		B462235723E8458700938CCE /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462235623E8458700938CCE /* ScrollViewController.swift */; };
+		B4850E2A23F256DA00FA049B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4850E2923F256DA00FA049B /* TableViewCell.swift */; };
 		B4B5BE3723EFA9D9007D9485 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B5BE3623EFA9D9007D9485 /* Data.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		B462234E23E83CDC00938CCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B462235023E83CDC00938CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B462235623E8458700938CCE /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		B4850E2923F256DA00FA049B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B4B5BE3623EFA9D9007D9485 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,11 +81,12 @@
 				B462234223E83CD800938CCE /* AppDelegate.swift */,
 				B462234423E83CD800938CCE /* SceneDelegate.swift */,
 				B462234623E83CD800938CCE /* ViewController.swift */,
+				B462235623E8458700938CCE /* ScrollViewController.swift */,
 				B462234823E83CD800938CCE /* Main.storyboard */,
 				B462234B23E83CDC00938CCE /* Assets.xcassets */,
 				B462234D23E83CDC00938CCE /* LaunchScreen.storyboard */,
 				B462235023E83CDC00938CCE /* Info.plist */,
-				B462235623E8458700938CCE /* ScrollViewController.swift */,
+				B4850E2923F256DA00FA049B /* TableViewCell.swift */,
 			);
 			path = ABCDE;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				B462234723E83CD800938CCE /* ViewController.swift in Sources */,
 				B4B5BE3723EFA9D9007D9485 /* Data.swift in Sources */,
 				B462234323E83CD800938CCE /* AppDelegate.swift in Sources */,
+				B4850E2A23F256DA00FA049B /* TableViewCell.swift in Sources */,
 				B462234523E83CD800938CCE /* SceneDelegate.swift in Sources */,
 				B462235723E8458700938CCE /* ScrollViewController.swift in Sources */,
 			);

@@ -14,4 +14,5 @@ struct Data {
     let C: String
     let D: String
     let E: String
+    let date: String
 }

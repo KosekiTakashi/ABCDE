@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,10 +75,20 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         return displayArray.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath)
+            as? TableViewCell else{
+                fatalError("Not found Cell")
+        }
         
-        cell.textLabel?.text = displayArray[indexPath.row].A
+//        cell.textLabel?.text = displayArray[indexPath.row].A
+        
+        cell.titleLabel.text = displayArray[indexPath.row].A
+        cell.dateLabel.text = displayArray[indexPath.row].date
         
         return cell
     }

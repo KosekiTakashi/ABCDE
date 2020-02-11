@@ -46,7 +46,10 @@ class ScrollViewController: UIViewController {
                 return
         }
         
-        let data = Data(A: A, B: B, C: C, D: D, E: E)
+        let date = Date()
+        
+        
+        let data = Data(A: A, B: B, C: C, D: D, E: E, date: "\(date)")
         
         dataSubject.onNext(data)
         
