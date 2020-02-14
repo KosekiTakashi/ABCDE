@@ -85,12 +85,23 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
                 fatalError("Not found Cell")
         }
         
-//        cell.textLabel?.text = displayArray[indexPath.row].A
-        
         cell.titleLabel.text = displayArray[indexPath.row].A
         cell.dateLabel.text = displayArray[indexPath.row].date
         
         return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nextVC = storyboard?.instantiateViewController(identifier: "detail") as! DetailViewController
+        
+        nextVC.A = displayArray[indexPath.row].A
+        nextVC.B = displayArray[indexPath.row].B
+        nextVC.C = displayArray[indexPath.row].C
+        nextVC.D = displayArray[indexPath.row].D
+        nextVC.E = displayArray[indexPath.row].E
+        
+        navigationController?.pushViewController(nextVC, animated: true)
     }
     
     

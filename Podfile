@@ -11,5 +11,7 @@ target 'ABCDE' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'IQKeyboardManagerSwift' 
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
 end
