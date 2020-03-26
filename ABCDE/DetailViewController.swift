@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class DetailViewController: UIViewController {
     
@@ -17,23 +19,47 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var DtextView: UITextView!
     @IBOutlet weak var EtextView: UITextView!
     
-    var A = String()
-    var B = String()
-    var C = String()
-    var D = String()
-    var E = String()
-   
+    var displayArray = [Data]()
+    var number: Int = 0
     
+    let disposeBag = DisposeBag()
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AtextView.text = A
-        BtextView.text = B
-        CtextView.text = C
-        DtextView.text = D
-        EtextView.text = E
+        AtextView.text = displayArray[number].A
+        BtextView.text = displayArray[number].B
+        CtextView.text = displayArray[number].C
+        DtextView.text = displayArray[number].D
+        EtextView.text = displayArray[number].E
+        
+        print(displayArray,number)
+        
+        change()
+    }
+    
+    
+    private func change(){
+        
+        
+        AtextView.rx.text.subscribe(onNext :{[weak self] text in
+            if let Atext = text{
+                print(Atext)
+                self?.AtextView.text = Atext
+            }
+            
+            
+            } ).disposed(by: disposeBag)
         
     }
+    
+    
+    @IBAction func changeAction(_ sender: Any) {
+        
+        
+    }
+    
+    
     
     
     

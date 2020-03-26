@@ -84,12 +84,12 @@
 				B462234423E83CD800938CCE /* SceneDelegate.swift */,
 				B462234623E83CD800938CCE /* ViewController.swift */,
 				B462235623E8458700938CCE /* ScrollViewController.swift */,
+				B4BC105523F6E7850043F8DE /* DetailViewController.swift */,
 				B462234823E83CD800938CCE /* Main.storyboard */,
 				B462234B23E83CDC00938CCE /* Assets.xcassets */,
 				B462234D23E83CDC00938CCE /* LaunchScreen.storyboard */,
 				B462235023E83CDC00938CCE /* Info.plist */,
 				B4850E2923F256DA00FA049B /* TableViewCell.swift */,
-				B4BC105523F6E7850043F8DE /* DetailViewController.swift */,
 			);
 			path = ABCDE;
 			sourceTree = "<group>";

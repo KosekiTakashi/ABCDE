@@ -442,6 +442,7 @@ Qe+8iEFkdmVyc2l0ee+8iRHigKjjg43jgqzjg4bjgqPjg5bjgarjgZPjgajjgpLoqJjpjLLjgZnjgos
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
+                                                            <action selector="changeAction:" destination="Y5E-Ln-6fF" eventType="touchUpInside" id="s7b-eG-hzk"/>
                                                             <action selector="saveAction:" destination="0Js-ag-3BB" eventType="touchUpInside" id="Ntv-8m-Ipt"/>
                                                         </connections>
                                                     </button>

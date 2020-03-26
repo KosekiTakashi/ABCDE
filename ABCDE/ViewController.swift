@@ -34,13 +34,6 @@ class ViewController: UIViewController {
     }
     
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        self.navigationController?.navigationBar.prefersLargeTitles = true
-//        
-//        
-//    }
-    
     private func updateTableView(){
         DispatchQueue.main.async {
             self.tableView.reloadData()
@@ -66,6 +59,7 @@ class ViewController: UIViewController {
     }
 }
 
+//MARK: - UItableView
 extension ViewController: UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -95,11 +89,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let nextVC = storyboard?.instantiateViewController(identifier: "detail") as! DetailViewController
         
-        nextVC.A = displayArray[indexPath.row].A
-        nextVC.B = displayArray[indexPath.row].B
-        nextVC.C = displayArray[indexPath.row].C
-        nextVC.D = displayArray[indexPath.row].D
-        nextVC.E = displayArray[indexPath.row].E
+        nextVC.displayArray = self.displayArray
+        nextVC.number = indexPath.row
         
         navigationController?.pushViewController(nextVC, animated: true)
     }
